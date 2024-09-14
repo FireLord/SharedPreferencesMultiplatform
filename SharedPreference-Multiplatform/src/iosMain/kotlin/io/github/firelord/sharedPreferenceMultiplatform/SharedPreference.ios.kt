@@ -2,7 +2,7 @@ package io.github.firelord.sharedPreferenceMultiplatform
 
 import platform.Foundation.NSUserDefaults
 
-actual class SharedPreferenceManager {
+actual class SharedPreference {
     private val userDefaults = NSUserDefaults.standardUserDefaults()
 
     actual fun putString(key: String, value: String) {

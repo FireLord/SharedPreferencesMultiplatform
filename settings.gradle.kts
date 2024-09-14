@@ -15,4 +15,4 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "SharedPreference-Multiplatform"
-include(":library")
+include(":SharedPreference-Multiplatform")

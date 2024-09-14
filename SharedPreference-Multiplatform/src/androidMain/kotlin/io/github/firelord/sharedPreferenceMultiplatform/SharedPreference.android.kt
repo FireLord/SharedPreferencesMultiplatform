@@ -3,9 +3,10 @@ package io.github.firelord.sharedPreferenceMultiplatform
 import android.content.Context
 import android.content.SharedPreferences
 
-actual class SharedPreferenceManager(context: Context) {
-    private val sharedPreferences: SharedPreferences =
-        context.getSharedPreferences("SharedPrefs", Context.MODE_PRIVATE)
+actual class SharedPreference(context: Context) {
+    private val sharedPreferences: SharedPreferences by lazy {
+        context.getSharedPreferences(null, Context.MODE_PRIVATE)
+    }
 
     actual fun putString(key: String, value: String) {
         sharedPreferences.edit().putString(key, value).apply()
