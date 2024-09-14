@@ -1,11 +1,12 @@
-package io.github.firelord.sharedPreferenceMultiplatform
+package io.github.firelord.sharedpreference
 
 import android.content.Context
 import android.content.SharedPreferences
 
-actual class SharedPreference(context: Context) {
+
+actual class SharedPreference actual constructor(context: Any) {
     private val sharedPreferences: SharedPreferences by lazy {
-        context.getSharedPreferences(null, Context.MODE_PRIVATE)
+        (context as Context).getSharedPreferences(null, Context.MODE_PRIVATE)
     }
 
     actual fun putString(key: String, value: String) {

@@ -1,8 +1,8 @@
-package io.github.firelord.sharedPreferenceMultiplatform
+package io.github.firelord.sharedpreference
 
 import platform.Foundation.NSUserDefaults
 
-actual class SharedPreference {
+actual class SharedPreference actual constructor(context: Any) {
     private val userDefaults = NSUserDefaults.standardUserDefaults()
 
     actual fun putString(key: String, value: String) {

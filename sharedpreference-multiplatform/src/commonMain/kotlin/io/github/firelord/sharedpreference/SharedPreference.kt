@@ -1,6 +1,6 @@
-package io.github.firelord.sharedPreferenceMultiplatform
+package io.github.firelord.sharedpreference
 
-expect class SharedPreference {
+expect class SharedPreference(context: Any) {
     fun putString(key: String, value: String)
     fun getString(key: String, defaultValue: String): String?
     fun putInt(key: String, value: Int)
