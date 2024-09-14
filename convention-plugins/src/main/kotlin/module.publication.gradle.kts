@@ -18,9 +18,9 @@ publishing {
 
         // Provide artifacts information required by Maven Central
         pom {
-            name.set("Kotlin Multiplatform library template")
-            description.set("Dummy library to test deployment to Maven Central")
-            url.set("https://github.com/Kotlin/multiplatform-library-template")
+            name.set("Shared Preference Multiplatform library")
+            description.set("Shared Preference Multiplatform library for Kotlin Multiplatform to store key-value pairs")
+            url.set("https://github.com/FireLord/SharedPreferencesMultiplatform")
 
             licenses {
                 license {
@@ -30,14 +30,14 @@ publishing {
             }
             developers {
                 developer {
-                    id.set("JetBrains")
-                    name.set("JetBrains Team")
-                    organization.set("JetBrains")
-                    organizationUrl.set("https://www.jetbrains.com")
+                    id.set("FireLord")
+                    name.set("FireLord Team")
+                    organization.set("FireLord")
+                    organizationUrl.set("https://firelord.github.io/")
                 }
             }
             scm {
-                url.set("https://github.com/Kotlin/multiplatform-library-template")
+                url.set("https://github.com/FireLord/SharedPreferencesMultiplatform")
             }
         }
     }
