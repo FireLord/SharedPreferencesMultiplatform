@@ -34,7 +34,7 @@ kotlin {
 }
 
 android {
-    namespace = "sharedpreference-multiplatform"
+    namespace = "io.github.firelord.sharedpreferenceMultiplatform"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
     defaultConfig {
         minSdk = libs.versions.android.minSdk.get().toInt()

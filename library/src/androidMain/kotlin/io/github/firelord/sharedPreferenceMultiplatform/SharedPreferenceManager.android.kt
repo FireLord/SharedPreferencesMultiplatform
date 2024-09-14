@@ -1,4 +1,4 @@
-package com.firelord.sharedPreference
+package io.github.firelord.sharedPreferenceMultiplatform
 
 import android.content.Context
 import android.content.SharedPreferences

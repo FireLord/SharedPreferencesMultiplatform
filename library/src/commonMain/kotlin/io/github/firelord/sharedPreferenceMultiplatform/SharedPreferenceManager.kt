@@ -1,4 +1,4 @@
-package com.firelord.sharedPreference
+package io.github.firelord.sharedPreferenceMultiplatform
 
 expect class SharedPreferenceManager {
     fun putString(key: String, value: String)
