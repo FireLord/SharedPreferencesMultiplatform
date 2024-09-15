@@ -19,6 +19,10 @@ jobs:
         include:
           - target: publishIosArm64PublicationToMavenCentralRepository
             os: macos-latest
+          - target: publishIosSimulatorArm64PublicationToMavenCentralRepository
+            os: macos-latest
+          - target: publishIosX64PublicationToMavenCentralRepository
+            os: macos-latest
           - target: publishAndroidReleasePublicationToMavenCentralRepository
             os: ubuntu-latest
           - target: publishKotlinMultiplatformPublicationToMavenCentralRepository
