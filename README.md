@@ -2,6 +2,8 @@
 
 `SharedPreferencesMultiplatform` is a Kotlin Multiplatform library that provides shared preference functionality across Android and iOS platforms. This library allows you to manage key-value storage in a platform-agnostic way, while using a dependency injection framework like Koin.
 
+![SharedPreferencesMultiplatform](screenshot1.jpeg)
+
 ## Features
 - **Kotlin Multiplatform support**: Use the same code for shared preferences across Android and iOS.
 - **Simple DI Integration**: Easily inject the shared preference instance using Koin or any other DI framework.
