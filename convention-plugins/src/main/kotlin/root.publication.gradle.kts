@@ -3,8 +3,8 @@ plugins {
 }
 
 allprojects {
-    group = "io.github.firelord.sharedpreference-multiplatform"
-    version = "1.0.0"
+    group = "io.github.firelord"
+    version = "1.0.1"
 }
 
 nexusPublishing {
