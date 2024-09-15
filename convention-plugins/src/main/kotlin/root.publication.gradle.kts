@@ -3,7 +3,7 @@ plugins {
 }
 
 allprojects {
-    group = "io.github.firelord"
+    group = "io.github.firelord.sharedpreference-multiplatform"
     version = "1.0.0"
 }
 

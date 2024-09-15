@@ -10,11 +10,14 @@ plugins {
 publishing {
     // Configure all publications
     publications.withType<MavenPublication> {
+        // disabled https://github.com/vanniktech/gradle-maven-publish-plugin/issues/754
+        // and configured at library build.gradle.kts using `JavadocJar.Dokka("dokkaHtml")`.
+        /*
         // Stub javadoc.jar artifact
         artifact(tasks.register("${name}JavadocJar", Jar::class) {
             archiveClassifier.set("javadoc")
             archiveAppendix.set(this@withType.name)
-        })
+        })*/
 
         // Provide artifacts information required by Maven Central
         pom {
@@ -44,8 +47,11 @@ publishing {
 }
 
 signing {
-    if (project.hasProperty("signing.gnupg.keyName")) {
+    if (project.hasProperty("mavenCentralUsername") ||
+        System.getenv("ORG_GRADLE_PROJECT_mavenCentralUsername") != null) {
         useGpgCmd()
-        sign(publishing.publications)
+        // It is not perfect (fails at some dependency assertions), better handled as
+        // `signAllPublications()` (as in vanniktech maven publish plugin) at build.gradle.kts.
+        //sign(publishing.publications)
     }
 }
